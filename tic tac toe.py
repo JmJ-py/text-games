@@ -30,9 +30,7 @@ def main():
         if check_tie(board) is True:
             print("\n\nIt's a tie!!!\nPlay Again!")
             break
-        #import os
-        #clear = lambda: os.system("cls")
-        #clear()
+
         
     
 board = {
@@ -48,11 +46,9 @@ open_positions = {
 }
 
 #Step 2 is take the user input on position and determine the location in the print
-#Do I set this up as a list and append position through translation?
 def place_x():
     open_positions = {1: 0, 2: 2, 3: 4, 4: 12, 5: 14, 6: 16, 7: 24, 8: 26, 9: 28}
-    position = int(input("\nWhat position do you want to place your X?: "))
-    
+    position = int(input("\nWhat position do you want to place your X?: "))   
     position = open_positions[position]
     if board.get(position) != " ":
         print("Ooops. That position is already taken.")
@@ -63,7 +59,6 @@ def place_x():
 def place_o():
     open_positions = {1: 0, 2: 2, 3: 4, 4: 12, 5: 14, 6: 16, 7: 24, 8: 26, 9: 28}
     position = int(input("\nWhat position do you want to place your O?: "))
-    
     position = open_positions[position]
     if board.get(position) != " ":
         print("Ooops. That position is already taken.")
@@ -117,7 +112,6 @@ def check_tie(a):
 
 
 def print_board():
-
     for value in board.values():
         print(value, end="")
 
