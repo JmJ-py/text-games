@@ -48,10 +48,6 @@ def main():
             else:
                 win = "win"
                 break
-        if check_tie(board) is True:
-            print("\nIt's a tie!")
-            if play_again() is True:
-                reset_board(board)
 
         
    
