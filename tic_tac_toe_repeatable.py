@@ -9,9 +9,6 @@ def main():
         18: "-", 19: "-", 20: "-", 21: "-", 22: "-", 23: "\n",
         24: " ", 25: "|", 26: " ", 27: "|", 28: " "
         }
-    open_positions = {
-        1: 0, 2: 2, 3: 4, 4: 12, 5: 14, 6: 16, 7: 24, 8: 26, 9: 28
-        } 
 
 
 #Step 1 is print the rules and have the user return nothing
