@@ -51,12 +51,12 @@ def main():
 #Step 2 is take the user input on position and determine the location in the print
 def place_x(j):
     open_positions = {1: 0, 2: 2, 3: 4, 4: 12, 5: 14, 6: 16, 7: 24, 8: 26, 9: 28}
-    position = int(input("\n\nWhat position do you want to place your X?: "))
     
+    position = int(input("\n\nWhat position do you want to place your X?: "))    
     position = open_positions[position]
     if j.get(position) != " ":
         print("Ooops. That position is already taken.")
-        place_x()
+        place_x(j)
     else:
         j[position] = "X"
 
@@ -67,7 +67,7 @@ def place_o(k):
     position = open_positions[position]
     if k.get(position) != " ":
         print("Ooops. That position is already taken.")
-        place_o()
+        place_o(k)
     else:
         k[position] = "O"
 
